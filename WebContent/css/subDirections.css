@@ -1,0 +1,251 @@
+#navbg {
+      background-color: white;
+}
+#bg-directions{
+      background-image: url('../images/bg_directions.png');
+      background-size: cover;
+}
+
+#content-directions > #map{
+      width: 1200px;
+      height: 559px;
+      background-color: yellowgreen;
+      margin: 0 auto;
+      margin-top: 75px;
+      margin-bottom: 38px;
+}
+
+#content-directions > #box1{
+      width: 1200px; 
+      height: 108px;
+      margin: 0 auto;
+}
+
+#content-directions > #box1::after{
+      content: "";
+      display: block;
+      clear: both;
+}
+
+#content-directions > #box1 > .info{
+      width: 600px;
+      float: left;
+}
+
+#content-directions > #box1 > .info > span > b, #content-directions > #box2 > b{
+      font-size: 20px;
+      margin: 0px 102px 0px 22px;
+}
+
+#content-directions > #box1 > .info > span{
+      font-size: 17px;
+      display: block;
+      margin-bottom: 1px;
+}
+
+#content-directions > #box1 > .info > span:last-child{
+      margin-bottom: 0px;
+}
+
+#content-directions > #line{
+      width: 1200px;
+      border: 1px solid #eaeaea;
+      margin: 38px auto;
+}
+
+#content-directions > #box2{
+      margin: 0 auto;
+      width: 1200px;
+}
+
+#content-directions > #box2::after,
+#content-directions > #box2 > #subwaybus-box > #subway::after,
+#content-directions > #box2 > #subwaybus-box > #bus::after
+{
+      content: "";
+      display: block;
+      clear: both;
+}
+
+#content-directions > #box2 > b, 
+#content-directions > #box2 > #subwaybus-box,
+#content-directions > #box2 > #subwaybus-box > #subway > img,
+#content-directions > #box2 > #subwaybus-box > #bus > img,
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway,
+#content-directions > #box2 > #subwaybus-box > #bus > #info-bus
+{
+      float: left;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway{
+      margin-bottom: 35px;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > img,
+#content-directions > #box2 > #subwaybus-box > #bus > img
+{
+      display: block;
+      width: 55px;
+      height: 55px;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway,
+#content-directions > #box2 > #subwaybus-box > #bus > #info-bus
+{
+      padding-left: 39px;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > b,
+#content-directions > #box2 > #subwaybus-box > #bus > #info-bus > b
+{
+      font-size: 20px;
+      line-height: 25px;
+      display: inline-block;
+      margin-bottom: 12px;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span,
+#content-directions > #box2 > #subwaybus-box > #bus > #info-bus > span
+{
+      display: inline-block;
+      margin-bottom: 10px;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span::before{
+      content: " ";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      position: absolute;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span:nth-child(3)::before{
+      background-color: #1699FE;
+      transform: translate(-20px, 0px);
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span:nth-child(5):before{
+      background-color: #008BB7;
+      transform: translate(-20px, 0px);
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span:last-child:before{
+      background-color: #B10000;
+      transform: translate(-20px, 0px);
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span:last-child,
+#content-directions > #box2 > #subwaybus-box > #bus > #info-bus > span:last-child
+{
+      margin-bottom: 0;
+}
+
+#content-directions > #box2 > #subwaybus-box > #subway > #info-subway > span
+{
+      padding-left: 20px;
+}
+
+/* 다음 지도 api */
+.wrap {
+      position: absolute;
+      left: 0;
+      bottom: 40px;
+      width: 288px;
+      height: 132px;
+      margin-left: -144px;
+      text-align: left;
+      overflow: hidden;
+      font-size: 12px;
+      font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+      line-height: 1.5;
+}
+
+.wrap * {
+      padding: 0;
+      margin: 0;
+}
+
+.wrap .info-map {
+      width: 286px;
+      height: 120px;
+      border-radius: 5px;
+      border-bottom: 2px solid #ccc;
+      border-right: 1px solid #ccc;
+      overflow: hidden;
+      background: #fff;
+}
+
+.wrap .info-map:nth-child(1) {
+      border: 0;
+      box-shadow: 0px 1px 2px #888;
+}
+
+.info-map .title {
+      padding: 5px 0 0 10px;
+      height: 30px;
+      background: #eee;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+      font-weight: bold;
+}
+
+.info-map .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #888;
+      width: 17px;
+      height: 17px;
+      background: url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+}
+
+.info-map .close:hover {
+      cursor: pointer;
+}
+
+.info-map .body {
+      position: relative;
+      overflow: hidden;
+}
+
+.info-map .desc {
+      position: relative;
+      margin: 13px 0 0 90px;
+      height: 75px;
+}
+
+.desc .ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+
+.desc .jibun {
+      font-size: 11px;
+      color: #888;
+      margin-top: -2px;
+}
+
+.info-map .img {
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 73px;
+      height: 71px;
+      border: 1px solid #ddd;
+      color: #888;
+      overflow: hidden;
+}
+
+.info-map:after {
+      content: '';
+      position: absolute;
+      margin-left: -12px;
+      left: 50%;
+      bottom: 0;
+      width: 22px;
+      height: 12px;
+      background: url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+.info-map .link {color: #5085BB;}

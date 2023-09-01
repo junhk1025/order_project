@@ -1,0 +1,170 @@
+#navbg{
+	background-color: white;
+}
+#bg-customerService{
+	background-image: url('../images/bg_qna.png');
+	background-size: cover;
+}
+
+#content-qna{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+
+#content-qna-navbox{
+	height: 21px;
+}
+
+#content-qna-navbox::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#content-qna-nav{
+	float: left;    
+	height: 21px;
+}
+
+#content-qna-nav > span > a{
+	color: #aaa;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#content-qna-nav > span:last-child > a{
+	color: black;
+	font-weight: bold;
+}
+
+#content-qna-nav > span:after{
+	content: "|";      
+	color: #aaa;
+	padding: 0 15px;
+}
+
+#content-qna-nav > span:last-child:after{
+	content: "";      
+	padding: 0px;
+}
+
+#content-qna-search{
+	float: right;
+}
+
+#content-qna-search input{
+	margin: 0;
+	height: 21px;
+	font-size: 12px;
+	width: 250px;
+	background-image: url(../images/ico_search.png);
+	background-repeat: no-repeat;
+	border: 1px solid #e3e3e3;
+	padding-left: 35px;
+	background-size: 12px;
+	background-position: 10px;
+	border-radius: 5px;
+}
+
+#content-qna-search input::placeholder{
+	color: #aaa;
+}
+
+#content-qna-search button{
+	margin: 0;
+}
+
+#qna-list{
+	border-top: 3px solid #000;
+	width: 1200px;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+#qna-list th{
+	height: 46px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+#qna-list td, #qna-list th{
+	text-align: center;
+	vertical-align: middle;
+	box-sizing: border-box;
+	color: #666;
+}
+
+#qna-list td{
+	height: 46px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 400;
+	padding: 10px 10px;
+	border-top: 1px solid #c9c9c9;
+}
+
+#qna-list td > a{
+	color: #666;
+	text-decoration: none;
+}
+#qna-list td > div {
+	display: inline-block;
+	width: 80px;
+	height: 25px;
+	background-color: #777;
+	line-height: 24px;
+	border-radius: 5px;
+	color: #fff;
+}
+#qna-list td > .complete {
+	background-color:#4285F4;;
+}
+
+#qna-list tr:last-child td{
+	border-bottom: 1px solid black;
+}
+
+#paging-wrap{
+	width: 1200px;
+	margin-top: 30px;
+}
+#paging{
+	text-align: center;
+}
+
+#paging > a > img{
+	width: 11px;
+	height: 15px;
+}
+
+#paging > a:first-child > img{
+	margin-right: 20px;
+}
+
+#paging > a:last-child > img{
+	margin-left: 20px;
+}
+
+#paging > span > a{
+	font-size: 20px;
+	color: #666;
+	text-decoration: none;
+}
+
+
+#write-button{
+	width: 160px;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	line-height: 50px;
+	/* margin: 0 auto; */
+	margin-top: 20px;
+	float: right;
+	cursor:pointer;
+	color: white;
+	text-decoration: none;
+}
+

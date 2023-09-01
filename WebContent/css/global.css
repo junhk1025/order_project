@@ -1,0 +1,185 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {
+   font-family: 'NanumSquare', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   margin: 0px;
+   padding: 0px;
+   height: 0px;
+}
+section {
+   margin: 0px;
+   padding: 0px;
+}
+#navbg {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 118px;
+   transition: all .5s;
+   z-index: 3;
+}
+
+#nav{
+   margin: 0px auto;
+   width: 1200px;
+   height: 80px;
+}
+
+#nav > a > #logo, #nav > a > #logo02{
+   margin-top: 23px;
+   width: 94px;
+   height: 63px;
+   opacity: .7;
+   float: left;
+   cursor: pointer;
+}
+
+#nav > a > #logo, #nav > a > #logo02{
+   opacity: 1;
+}
+
+#nav > .nav > a, #nav > .sub-nav > a {
+   opacity: .7;
+   text-decoration: none;
+   letter-spacing:-1px;
+   margin-top: 47px;
+   margin-left: 105px;
+   width: 68px;
+   height: 22px;
+   font-size: 18px;
+   color: #fff;
+   cursor: pointer;
+   float: left;
+}
+
+#nav > .nav:last-child > a, #nav > .sub-nav:last-child > a{
+   letter-spacing:-1px;
+   width:100px; /* 수정 */
+   font-size: 15px;
+   float: right;
+}
+#nav > .nav:last-child > a:hover{
+   color: #fff;
+   font-size: 15px;
+   text-decoration: underline;
+   font-weight: initial;
+}
+#nav > .nav > a:hover {
+   color: #fff;
+   font-size: 19px;
+   font-weight: bold;
+}
+
+/* sub-nav */
+#nav > .sub-nav > a{
+   opacity: 1;
+   color: black;
+}
+
+#nav > .sub-nav > a:hover{
+   font-weight: bold;
+   color: #4285F4;
+}
+
+#nav > .sub-nav:last-child > a:hover{
+   font-weight: normal;
+   color: black;
+   text-decoration: underline;
+}
+
+/* footer */
+#footer{
+      width: 100%;
+      height: 150px;
+   background-color: black;
+   margin-top: 150px;
+}
+
+#footer > img{
+      position: fixed;
+      width: 39px;
+      height: 39px;
+      opacity: .7;
+      left: 1750px;
+      top: 800px;
+}
+
+#footer > #footer-content{
+      margin: 0 auto;
+      width: 1200px;
+      padding-top: 43px;
+}
+
+#footer > #footer-content:after{
+      content: "";
+      display: block;
+      clear: both;
+}
+
+#footer > #footer-content > span{
+      float: left;
+      margin: 0 auto;
+      display: block;
+      color: white;
+      font-size: 10px;
+      text-align: left;
+      line-height: 18px;
+      margin-top: 5px;
+}
+
+#footer > #footer-content > img{
+      float: right;
+      width: 95px;
+      height: 64px;
+}
+
+/* 수정 */
+.nav > .nav:last-child:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.nav > .nav-login, .sub-nav > .nav-login{
+    margin-top: 47px;
+    margin-left: 105px;
+    height: 22px;
+    float: right;
+    cursor: pointer;
+}
+
+.nav > .nav-login > a, .sub-nav > .nav-login > a{
+	margin-left: 30px;
+	text-decoration: none;
+    letter-spacing: -1px;
+    font-size: 15px;
+    color: #fff;
+    opacity: .7;
+}
+
+.nav > .nav-login > a:hover{
+	color:white;
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.sub-nav > .nav-login > a{
+   opacity: 1;
+   color: black;
+}
+
+
+.sub-nav > .nav-login > a:hover{
+   font-weight: normal;
+   color: black;
+   text-decoration: underline;
+}
+
+
+

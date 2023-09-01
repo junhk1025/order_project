@@ -1,0 +1,61 @@
+#qna-write{
+   width: 1200px;
+   border-top: 3px solid black;
+   border-bottom: 1px solid black;
+   margin-top: 20px;
+}
+
+#write-title{
+   padding: 16px 20px;
+   border-bottom: 1px solid black;
+}
+
+
+#write-title > p {
+   display: inline;
+   font-weight: bold;
+   font-size: 20px;
+}
+#write-title > #title {
+   margin-left: 30px;
+   width: 500px;
+   padding: 5px;
+   padding-left: 10px;
+   font-family: 'NanumSquare', sans-serif;
+}
+
+#write-content{
+   display: table;
+   padding: 16px 20px;
+   color: black;
+   border-bottom: 1px solid black;
+}
+#write-content > p {
+   display: table-cell;
+   vertical-align: middle;
+   font-weight: bold;
+   font-size: 20px;
+}
+#write-content > #content {
+   margin-left: 30px;
+   padding: 5px;
+   padding-left: 10px;
+   font-family: 'NanumSquare', sans-serif;
+}
+
+#write-info{
+   padding: 10px;
+   float: right;
+}
+
+#write-info > span, #write-info input{
+   font-size: 10px;
+   margin-right: 20px;
+   font-weight: bold;
+}
+
+#qna-write::after{
+   content: "";
+   clear: both;
+   display: block;
+}

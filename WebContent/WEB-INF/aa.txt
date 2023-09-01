@@ -1,0 +1,81 @@
+-- 고객문의
+CREATE TABLE tblClientQ (
+    seq number PRIMARY KEY,
+    subject varchar2(50) not null,
+    content varchar2(1000) not null,
+    regdate date default sysdate not null,
+    readcount number default 0 not null,
+    name varchar2(20) not null,
+    pw varchar2(50) not null,
+    state varchar2(20) not null
+)
+
+-- 코멘트
+CREATE TABLE tblComment (
+    seq number PRIMARY KEY,
+    content varchar2(1000) not null,
+    regdate date default sysdate not null,
+    pseq number not null REFERENCES tblClientQ(seq),
+    pid varchar(20) not null REFERENCES tblEmp(id)
+)
+
+-- 공지사항
+CREATE TABLE tblNotice (
+    seq number primary key,
+    subject varchar2(50) not null,
+    content varchar2(1000) not null,
+    regdate date default sysdate not null,
+    readcount number default 0 not null,
+    pid varchar(20) not null REFERENCES tblEmp(id)
+)
+
+-- FAQ
+CREATE TABLE tblFAQ (
+    seq number primary key,
+    subject varchar2(50) not null,
+    content varchar2(1000) not null,
+    regdate date default sysdate not null,
+    readcount number default 0 not null,
+    pid varchar2(20) not null REFERENCES tblEmp(id)
+)
+
+-- 직원
+CREATE TABLE tblEmp(
+ id varchar2(20) PRIMARY KEY,
+ pw varchar2(20) not null,
+ name varchar2(20) not null,
+ tel varchar2(30),
+ lv number not null,
+ bigo varchar2(100)
+)
+
+-- 기업
+CREATE TABLE tblCompany(
+    name varchar2(30) primary key,
+    acount number not null,
+    businessnum number not null,
+    ceoname varchar2(30) not null,
+    postnum number not null,
+    address varchar2(100) not null,
+    subaddress varchar2(100) not null,
+    email varchar2(50) not null,
+    tel number not null,
+    faxnum number not null
+)
+
+-- 담당거래처 목록
+CREATE TABLE tblEmpCP (
+    seq number primary key,
+    pid varchar2(20) not null REFERENCES tblEmp(id),
+    pcseq varchar2(7) not null references tblClient(seq),
+    pseq varchar2(7) not null references tblPurchase(seq)
+)
+
+
+create sequence tblClientQ_seq;
+create sequence tblComment_seq;
+create sequence tblNotice_seq;
+create sequence tblFAQ_seq;
+create sequence tblEmp_id;
+create sequence tblCompany_name;
+create sequence tblEmpCP_seq;

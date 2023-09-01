@@ -1,0 +1,156 @@
+#navbg{
+	background-color: white;
+}
+#bg-customerService{
+	background-image: url('../images/bg_qna.png');
+	background-size: cover;
+}
+
+#content-notice{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+
+#content-notice-navbox{
+	height: 21px;
+}
+
+#content-notice-navbox::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#content-notice-nav{
+	float: left;    
+	height: 21px;
+}
+
+#content-notice-nav > span > a{
+	color: #aaa;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#content-notice-nav > span:after{
+	content: "|";      
+	color: #aaa;
+	padding: 0 15px;
+}
+#content-notice-nav > span:last-child:after{
+	content: "";      
+	color: #aaa;
+	padding: 0px;
+}
+
+#content-notice-search{
+	float: right;
+}
+
+#content-notice-search input{
+	margin: 0;
+	height: 21px;
+	font-size: 12px;
+	width: 250px;
+	background-image: url(../images/ico_search.png);
+	background-repeat: no-repeat;
+	border: 1px solid #e3e3e3;
+	padding-left: 35px;
+	background-size: 12px;
+	background-position: 10px;
+	border-radius: 5px;
+}
+
+#content-notice-search input::placeholder{
+	color: #aaa;
+}
+
+#content-notice-search button{
+	margin: 0;
+}
+
+#notice-list{
+	border-top: 3px solid #000;
+	width: 1200px;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+#notice-list th{
+	height: 46px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+#notice-list td, #notice-list th{
+	text-align: center;
+	vertical-align: middle;
+	box-sizing: border-box;
+	color: #666;
+}
+
+#notice-list td{
+	height: 46px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 400;
+	padding: 10px 10px;
+	border-top: 1px solid #c9c9c9;
+}
+
+#notice-list td > a{
+	color: #666;
+	text-decoration: none;
+}
+
+#notice-list tr:last-child td{
+	border-bottom: 1px solid black;
+}
+
+#paging-wrap{
+	width: 1200px;
+	margin-top: 30px;
+}
+#paging{
+	text-align: center;
+}
+
+#paging > a > img{
+	width: 11px;
+	height: 15px;
+}
+
+#paging > a:first-child > img{
+	margin-right: 20px;
+}
+
+#paging > a:last-child > img{
+	margin-left: 20px;
+}
+
+#paging > span > a{
+	font-size: 20px;
+	color: #666;
+	text-decoration: none;
+}
+
+#write-button{
+	background-color:black;
+	color: white;
+	text-decoration: none;
+	width:160px;
+	height: 50px;
+	text-align: center;
+	line-height:50px;
+	margin-top:20px;
+	float:right;
+	cursor:pointer;
+}
+
+#content-notice:after {
+	content: "";
+	clear:both;
+	display:block;
+}

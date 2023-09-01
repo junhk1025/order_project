@@ -1,0 +1,91 @@
+#navbg {
+      background-color: white;
+}
+
+#bg-company{
+      background-image: url('../images/bg_company.png');
+      background-size: cover;
+}
+
+#company-box1, #company-box2{
+      margin-bottom: 100px;
+}
+
+#content-company{
+      width: 1200px;
+      margin: 0 auto;
+      padding-top: 75px;
+}
+
+.company-title{
+      font-size: 25px;
+      font-weight: bold;
+}
+
+.company-line{
+      width: 1200px;
+      border: 1px solid #eaeaea;
+      margin: 5px 0 15px 0;
+}
+
+#company-box1-info > span{
+      display: inline-block;
+      margin-bottom: 20px;
+}
+
+#company-box1-info > span:last-child{
+      line-height: 22px;
+      margin: 0;
+}
+
+
+#company-box2-info > div{
+      margin-bottom: 12px;
+}
+
+#company-box2-info > div > b{
+      font-size: 17px;
+      width: 600px;
+      display: inline-block;
+}
+
+.company-box3-info:nth-child(3){
+      margin-bottom: 20px;
+}
+
+.company-box3-info::after{
+      content: "";
+      display: block;
+      clear: both;
+}
+
+.box3-imgbox{
+      width: 300px;
+      height: 212px;
+      float: left;
+      background-size: cover;
+}
+
+.company-box3-info:nth-child(3) > .box3-imgbox{
+      background-image: url(../images/company_img01.png);
+}
+
+.company-box3-info:nth-child(4) > .box3-imgbox{
+      background-image: url(../images/company_img02.png);
+}
+
+.box3-content{
+      float: left;
+      padding-left: 50px;
+}
+
+.box3-content > b{
+      font-size: 20px;
+      display: inline-block;
+      padding: 20px 0;
+}
+
+.box3-content > span{
+      font-size: 15px;
+      line-height: 25px;
+}

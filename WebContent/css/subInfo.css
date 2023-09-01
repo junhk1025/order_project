@@ -1,0 +1,58 @@
+#navbg{
+	background-color: white;
+}
+#bg-info{
+      background-image: url('../images/bg_info.png');
+      background-size: cover;
+}
+
+.guide {
+	width: 1200px;
+	height: 200px;
+	/* background-color: #999; */
+	margin: 0px auto;
+	/* box-shadow: 5px 5px 2px 3px #777; */
+	/* text-align: center; */
+	margin-top: 50px;
+	display: table;
+}
+.circle {
+	width: 180px;
+	height: 180px;
+	/* float: left; */
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.guide:nth-child(1) > .circle {
+	background-image: url("../images/section03_img01.png");
+}
+.guide:nth-child(2) > .circle {
+	background-image: url("../images/section03_img02.png");
+}
+.guide:nth-child(3) > .circle {
+	background-image: url("../images/section03_img03.png");
+}
+.guide:nth-child(4) > .circle {
+	background-image: url("../images/section03_img04.png");
+}
+.guide:nth-child(5) > .circle {
+	background-image: url("../images/section03_img05.png");
+}
+.guide_comment {
+	font-size: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 900px;
+}
+.guide_comment > b {
+	font-size: 25px;
+	line-height: 80px;
+}
+.guide_comment > span {
+	line-height: 30px;
+}
+

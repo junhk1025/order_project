@@ -1,0 +1,141 @@
+#navbg{
+      background-color: white;
+}
+#bg-customerService{
+      background-image: url('../images/bg_qna.png');
+      background-size: cover;
+}
+
+#content-faq{
+      width: 1200px;
+      margin: 0 auto;
+      padding-top: 75px;
+}
+
+#content-faq-navbox{
+      height: 21px;
+}
+
+#content-faq-navbox::after{
+      content: "";
+      display: block;
+      clear: both;
+}
+
+#content-faq-nav{
+      float: left;    
+      height: 21px;
+}
+
+#content-faq-nav > span > a{
+      color: #aaa;
+      font-size: 16px;
+      text-decoration: none;
+}
+
+#content-faq-nav > span:nth-child(2) > a{
+      color: black;
+      font-weight: bold;
+}
+
+#content-faq-nav > span::after{
+      content: "|";      
+      color: #aaa;
+      padding: 0 15px;
+}
+#content-faq-nav > span:last-child:after{
+      content: "";      
+      padding: 0px;
+}
+
+#content-faq-search{
+      float: right;
+}
+
+#content-faq-search input{
+      margin: 0;
+      height: 21px;
+      font-size: 12px;
+      width: 250px;
+      background-image: url(../images/ico_search.png);
+      background-repeat: no-repeat;
+      border: 1px solid #e3e3e3;
+      padding-left: 35px;
+      background-size: 12px;
+      background-position: 10px;
+      border-radius: 5px;
+}
+
+#content-faq-search input::placeholder{
+      color: #aaa;
+}
+
+#content-faq-search button{
+      margin: 0;
+}
+
+#faq-list{
+      border-top: 3px solid #000;
+      width: 1200px;
+      margin-top: 20px;
+      border-collapse: collapse;
+}
+
+#faq-list th{
+      height: 46px;
+      font-size: 14px;
+      line-height: 1;
+      font-weight: bold;
+}
+
+#faq-list td, #faq-list th{
+      text-align: center;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: #666;
+}
+
+#faq-list td{
+      height: 46px;
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 400;
+      padding: 10px 10px;
+      border-top: 1px solid #c9c9c9;
+}
+
+#faq-list td > a{
+      color: #666;
+      text-decoration: none;
+}
+
+#faq-list tr:last-child td{
+      border-bottom: 1px solid black;
+}
+
+#paging-wrap{
+      width: 1200px;
+      margin-top: 30px;
+}
+#paging{
+      text-align: center;
+}
+
+#paging > a > img{
+      width: 11px;
+      height: 15px;
+}
+
+#paging > a:first-child > img{
+      margin-right: 20px;
+}
+
+#paging > a:last-child > img{
+      margin-left: 20px;
+}
+
+#paging > span > a{
+      font-size: 20px;
+      color: #666;
+      text-decoration: none;
+}
